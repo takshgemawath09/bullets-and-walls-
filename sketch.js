@@ -10,9 +10,10 @@ function setup() {
   bullet=createSprite(50,200,30,20);
   bullet.shapeColor='white';
   bullet.velocityX=speed;
+ thickness=random(23,88);
   wall=createSprite(1500,200,thickness,height/2);
   wall.shapeColor=color(80,80,80);
-  thickness=random(23,88);
+  
   
 }
 
@@ -20,7 +21,8 @@ function draw() {
   background(0,0,0);  
 
   
- if  (wall.x-bullet.x>wall.width/2+bullet/2){
+ if  (hasCollided(bullet,wall))
+ {
   bullet.velocityX=0;
   var damage=0.5*weight*speed*speed/thickness*thickness*thickness
  }
@@ -37,5 +39,17 @@ function draw() {
 
 
   drawSprites();
+}
+
+function hascollided(1bullet,1wall)
+{
+
+bulletRightEdge=1bullet.x+1bulllet.width;
+wallLeftEdge=1wall.x;
+If(bulletRightEdge>=wallLeftEdge)
+{
+ return true
+}
+return false;
 }
 
