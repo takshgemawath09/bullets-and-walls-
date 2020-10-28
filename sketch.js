@@ -41,11 +41,11 @@ function draw() {
   drawSprites();
 }
 
-function hasCollided(1bullet,1wall)
+function hasCollided(lbullet,lwall)
 {
 
-bulletRightEdge=1bullet.x+1bulllet.width;
-wallLeftEdge=1wall.x;
+bulletRightEdge=lbullet.x+lbulllet.width;
+wallLeftEdge=lwall.x;
 if(bulletRightEdge>=wallLeftEdge)
 {
  return true
