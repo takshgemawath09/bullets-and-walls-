@@ -41,7 +41,7 @@ function draw() {
   drawSprites();
 }
 
-function hascollided(1bullet,1wall)
+function hasCollided(1bullet,1wall)
 {
 
 bulletRightEdge=1bullet.x+1bulllet.width;
