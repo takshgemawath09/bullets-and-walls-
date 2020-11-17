@@ -5,8 +5,8 @@ var bullet,wall,thickness;
 function setup() {
  
     createCanvas(1600,400);
-  speed=random(30,52);
-  weight=random(223,321);
+  speed=random(223,321);
+  weight=random(30,52);
   bullet=createSprite(50,200,30,20);
   bullet.shapeColor='white';
   bullet.velocityX=speed;
